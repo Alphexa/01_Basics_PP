@@ -17,9 +17,11 @@ const zahl1 = parseFloat(prompt("Geben Sie die erste Zahl ein: "));
 // Prompt zur Eingabe der zweiten Zahl
 const zahl2 = parseFloat(prompt("Geben Sie die zweite Zahl ein: "));
 
+
 // Berechnung der Summe
 
 const summe = zahl1 + zahl2;
 
 // Ausgabe der Summe in der Konsole
 console.log("Die Summe der Zahlen ist:" + summe);
+
