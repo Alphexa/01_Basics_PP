@@ -113,8 +113,8 @@ job = "diver"; // .. taucht im Rhein!
 
 /********  Fallunterscheidung / SWITCH|CASE 2 *******/
 
-const cond = true;
-const value = 2;
+const cond =false;  // cond = condition = Bedingung
+const value = 1;  // Zahlenwertbelegung
 
 switch (cond) {
     case (value == 1):
