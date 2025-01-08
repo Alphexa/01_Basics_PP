@@ -82,11 +82,11 @@
     
 /****** Fallunterscheidung / SWITCH|CASE 1 ******/
 
-const firstName = "Jane";
-let job;
+//const firstName = "Jane";
+//let job;
 
 //job = "driver";  // .. fährt TAXI! / UBER
-job = "diver"; // .. taucht im Rhein! 
+//job = "diver"; // .. taucht im Rhein! 
 //job = "artist"; // .. malt ein Bild!
 //job = "pilot"; // .. macht etwas anderes! --> default
 // job = "teacher"; // .. unterrichtet!

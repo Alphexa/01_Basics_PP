@@ -20,10 +20,10 @@ Alter 13-17 // Cola
 const name = "Maximilian-Armin-Harald"; // Ändere den Namen direkt hier im Code
 
 // Schritt 2: Alter eingeben 
-const ageInput = "88"; // Ändere das Alter direkt hier im Code
+//const ageInput = "88"; // Ändere das Alter direkt hier im Code
 
 // Schritt 3: Alter in eine Zahl umwandeln
-const age = Number(ageInput);
+const age = Number("88");
 
 // Schritt 4: Alter prüfen und Getränk zuordnen
 if (typeof age === "number" && age >= 0) { // Alter muss eine gültige Zahl >= 0 sein
@@ -41,8 +41,9 @@ if (typeof age === "number" && age >= 0) { // Alter muss eine gültige Zahl >= 0
     }
 
     // Ausgabe: Name + Getränk
-    console.log(`${name} trinkt ${drink}.`);
+    console.log(name + " trinkt " + drink + ".");
 } else {
     // Fehlerausgabe für ungültiges Alter
     console.log("Ungültige Eingabe. Alter muss eine Zahl größer als 0 sein.");
 }
+
