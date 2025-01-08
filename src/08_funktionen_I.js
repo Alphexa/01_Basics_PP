@@ -91,8 +91,10 @@ output(getString("Max","Mütze"));
 function getString(firstName, secondName) {
     const GAP = " ";
     let outputStr = "Hallo,"+ GAP + firstName + GAP + secondName + "!"
-    
+    return outputStr; // return schickt die Date an den Call...
+    console.log("Test"); // return bewirkt weiteren code nicht zu lesen!!!
 }
+
 
 // 2. Funktionalität : string output
 function output(outputData) {
