@@ -17,13 +17,13 @@
 
 //ausgabeNamen();  // call
 
-function ausgabeNamen() {
+//function ausgabeNamen() {
 
-        // inerne Variable | What happens in Vegas...
-    let firstName = "Manuel";
-    console.log("Hallo, " + firstName + "!");
+  //      // inerne Variable | What happens in Vegas...
+    //let firstName = "Manuel";
+    //console.log("Hallo, " + firstName + "!");
     
-}
+//}
 
 // console.log (firstName);  Fehler : scope!
 
@@ -43,9 +43,9 @@ function ausgabeNamen() {
 //ausgabeNamen2("Markus")
 //ausgabeNamen2("Frank")
 
-function ausgabeNamen2(firstName) {
-    console.log("Hallo, " + firstName + "!");
-}
+//function ausgabeNamen2(firstName) {
+   // console.log("Hallo, " + firstName + "!");
+//}
 
 
 /***** Funktionen 02c *****/
@@ -56,9 +56,9 @@ function ausgabeNamen2(firstName) {
 //const prompt = require('prompt-sync')({sigint: true});
 //ausgabeNamenParams(prompt("Vorname? :"),prompt("Name? :")); // Piping
 
-function ausgabeNamenParams(firstName, secondName) {
-    console.log("Hallo, " + firstName + " " + secondName +"!");
-}
+//function ausgabeNamenParams(firstName, secondName) {
+  //  console.log("Hallo, " + firstName + " " + secondName +"!");
+//}
 
 
 /***** Funktionen 03a *****/
@@ -66,7 +66,8 @@ function ausgabeNamenParams(firstName, secondName) {
 // Postulat: one function = one job (uncle Bob)
 // SRP single responsibility principle
 
-ausgabeNamenSRP("Max","Mütze");
+
+//ausgabeNamenSRP("Max","Mütze");
 
 function ausgabeNamenSRP(firstName, secondName) {
 
@@ -78,3 +79,22 @@ function ausgabeNamenSRP(firstName, secondName) {
 }
 
 /******** Funktionen 03b ********/
+// 2. Funktionalität
+//output ("Hallo?")
+//output(2);
+//output(true);
+
+// 1. Funktionalität: string composing
+output(getString("Max","Mütze"));
+
+
+function getString(firstName, secondName) {
+    const GAP = " ";
+    let outputStr = "Hallo,"+ GAP + firstName + GAP + secondName + "!"
+    
+}
+
+// 2. Funktionalität : string output
+function output(outputData) {
+    console.log(outputData);
+}
