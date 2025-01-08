@@ -77,4 +77,4 @@ function ausgabeNamenSRP(firstName, secondName) {
     console.log(outputStr);
 }
 
-
+/******** Funktionen 03b ********/
