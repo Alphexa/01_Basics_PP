@@ -2,15 +2,28 @@
 /*
 0. a+b | a-b | a*b | a/b  --> Ergebnis c 
 
-1. Dateneingabe + -überprüfung :  
-2. Auswahl Rechenart : 
-3. Fkt. Grundrechenarten : check!
-4. Ausgabe in Konsole : check!
+1. Dateneingabe + -überprüfung :    check!  | ????
+2. Auswahl Rechenart :              check!
+3. Fkt. Grundrechenarten :          check!
+4. Ausgabe in Konsole :             check!
 */
 
 const ERROR_STR_DIV = "Division durch Null? Dein Ernst?";
 const ERROR_STR_CAL = "Dedüm"
-
+const prompt = require('prompt-sync')({sigint: true});
+startApp();
+function startApp() {
+    output(calculator(getNum1(),getNum2(),getop()));
+}
+function getNum1() {
+    return parseInt(prompt("Num1: "));
+}
+function getNum2() {
+        return parseInt(prompt("Num2: "));
+}
+function getop() {
+    return prompt("OP?");
+}
 //module : Calculator | tests:
 //agreement : "+";"-";"*";":";"/";
 /*  output(calculator(3,2,"+"));
@@ -35,8 +48,6 @@ function calculator(a,b,op) {   // op hier für Operator
                 return ERROR_STR_CAL;
     }
 }
-
-
 // module: division a /= b  | test
 /* output(dividieren(3,2));
 output(dividieren(3,-2));
@@ -49,17 +60,13 @@ function dividieren(a, b) {
     }
        return a / b;
 }
-
-
 // module : multiplication a * b  | test
 // output(multiply(3,2));
 // output(multiply(3,-2));
 // output(multiply(3,0));
-
 function multiply(a,b){
     return a * b;
 }
-
 //module : subtraktion a - b | test :
 // module: subtraction a - b |  test:
 // output(subtract(3,2));
@@ -69,19 +76,14 @@ function multiply(a,b){
 function subtract(a,b) {
 	return a - b;
 }
-
-
 // module : addition a + b | test:
 
 //output(add(3,2));
 //output(add(3,-2));
 //output(add(3,0));
-
 function add(a,b) {
     return a + b;
 }
-
-
 // module : output | test
 //output("hi");
 //output(2);
