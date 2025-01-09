@@ -4,11 +4,38 @@
 
 1. Dateneingabe + -überprüfung :  
 2. Auswahl Rechenart : 
-3. Fkt. Grundrechenarten : 
-4. Ausgabe in Konsole : 
+3. Fkt. Grundrechenarten : check!
+4. Ausgabe in Konsole : check!
 */
 
 const ERROR_STR_DIV = "Division durch Null? Dein Ernst?";
+const ERROR_STR_CAL = "Dedüm"
+
+//module : Calculator | tests:
+//agreement : "+";"-";"*";":";"/";
+/*  output(calculator(3,2,"+"));
+ output(calculator(3,2,"-"));
+ output(calculator(3,2,"*"));
+ output(calculator(3,2,":"));
+ output(calculator(3,2,"/"));
+ output(calculator(3,0,"/"));
+ output(calculator(3,2,"#?!")); */
+function calculator(a,b,op) {   // op hier für Operator
+    switch (op) {
+        case "+":       // addieren
+            return add(a,b);
+        case "-":    // subtrahieren
+            return subtract(a,b);
+        case "*":    // multiplizieren
+            return multiply(a,b);
+        case ":":   //dividieren
+        case "/":   
+            return dividieren(a,b);
+        default:
+                return ERROR_STR_CAL;
+    }
+}
+
 
 // module: division a /= b  | test
 /* output(dividieren(3,2));
