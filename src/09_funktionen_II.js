@@ -11,21 +11,16 @@
 const ERROR_STR_DIV = "Division durch Null? Dein Ernst?";
 
 // module: division a /= b  | test
-output(dividieren(3,2));
+/* output(dividieren(3,2));
 output(dividieren(3,-2));
 output(dividieren(3,0));
 output(dividieren(0,5));
-output(dividieren(10,2))
+output(dividieren(10,2)); */
 function dividieren(a, b) {
-    if (b != 0) {
-      return a / b;
+    if (b == 0) {
+       return ERROR_STR_DIV;
     }
-    else{
-        
-        return ERROR_STR_DIV;
-    }
-        
-
+       return a / b;
 }
 
 
