@@ -11,6 +11,9 @@
 const ERROR_STR_DIV = "Division durch Null? Dein Ernst?";
 const ERROR_STR_CAL = "Dedüm"
 const prompt = require('prompt-sync')({sigint: true});
+
+
+
 startApp();
 function startApp() {
     output(calculator(getNum1(),getNum2(),getop()));
