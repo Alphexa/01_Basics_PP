@@ -20,7 +20,7 @@ const INFO_STR_PRE_NUM = "Please insert ";
 const INFO_STR_POST_NUM = " number: ";
 
 /** Variable (Global)*/
-let isNotAborted; 
+let isNotAborted;   // Abbruch mit STRG + C
 
 // application / App
 startApp();
