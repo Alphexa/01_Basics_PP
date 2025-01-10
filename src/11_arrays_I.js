@@ -141,7 +141,7 @@ function getSentenceArr2(arr) {
     const PUNCT = ".";
     let str =  "";
 
-    // 1. Variante: Struktur GENAU erzeugen ...
+/*     // 1. Variante: Struktur GENAU erzeugen ...
     for (let i = 0; i < arr.length; i++) {
         if (i != arr.length - 1) { // wenn du noch nicht am Ende des Arrays bist ...
             str += arr[i] + GAP; // entweder ..
@@ -153,7 +153,15 @@ function getSentenceArr2(arr) {
     return str;
 
 
-}
+} */
+
+    // // 2. Variante: Struktur erzeugen + trimmen()
+    for (let i = 0; i < arr.length; i++) {
+         str += arr[i] + GAP; // entweder ..
+     }
+    
+     return str.trim() + PUNCT;
+
 
 
 
@@ -161,7 +169,7 @@ function getSentenceArr2(arr) {
 
 
 // Modul: Ausgabe in Konsole : Test
-// output("hi"); 
+output("hi"); 
 function output(outputStr) {
     console.log(outputStr);
 }
