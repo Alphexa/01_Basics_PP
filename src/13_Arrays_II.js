@@ -28,10 +28,10 @@ function output(outputData) {
  */
 /*********  Praxis **********/
 
-/*
+/* /*
 Aufgabe:
 Erstellen Sie eine JS-Struktur, die Ihnen den folgenden String 
-/*
+
 Aufgabe:
 
 <html><head></head><body><h1></h1><p></p></body></html>
@@ -54,7 +54,7 @@ Aufgabe:
 
 Verwenden Sie dafür die untenstehenden Arrays / Objekte
 
-*/
+ */
 
 const COBJ      = {open_o:"<",close_o:"</",close:">"}
 const TAGS = [  "html","head","head","body",
@@ -67,11 +67,12 @@ const TAGS = [  "html","head","head","body",
 
 const NEW_LINE_STR = "\n";
 const TAB_STR = "\t";
+const ERR_STR = "ERR0R!";
 
 let stack = [];
 
 // Modul: HTML-Synthese | Test
-//output(getHTML());
+output(getHTML());
 function getHTML() {
 
     let htmlStr = "";
@@ -122,9 +123,9 @@ function isOpenElement(tag) {
 }
 
 // Modul: Zusammenbau der Elements: <tagStr> --> Tests:
-// output(getElement(tags[1],"open"));
-// output(getElement(tags[1],"close"));
-// output(getElement(tags[1]));
+//output(getElement(TAGS[1],"open"));
+//output(getElement(TAGS[1],"close"));
+//output(getElement(TAGS[1]));
 function getElement(tag,op) {
     switch (op) {
         case "open":
@@ -136,3 +137,8 @@ function getElement(tag,op) {
     }
 }
 
+// Modul: Ausgabe | Test
+//output("hi");
+function output(outputData) {
+    console.log(outputData);
+}
